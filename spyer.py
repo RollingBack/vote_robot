@@ -49,9 +49,9 @@ def get_random_chinese_name(sex=''):
     last_name = []
     sex = sex.lower()
     if sex == 'boy':
-        return first_name.random.choice(chinese_boy_last_name)
+        return first_name + random.choice(chinese_boy_last_name)
     elif sex == 'girl':
-        return first_name.random.choice(chinese_boy_last_name)
+        return first_name + random.choice(chinese_boy_last_name)
     else:
         last_name.append(random.choice(chinese_boy_last_name))
         last_name.append(random.choice(chinese_girl_last_name))
